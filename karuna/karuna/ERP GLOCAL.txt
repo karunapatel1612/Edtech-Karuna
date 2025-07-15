@@ -1,0 +1,84 @@
+ERP GLOCAL
+
+Glocal is  erp in which have two type of university, first one is vocational university & skill type of university. 
+also I would like to tell you that the vocational is a duration based course like Medical lab technology  and second last is skill type of university in which we provide the monthly basis and yearly basis  course like diploma in pre-primary teacher training course.
+
+there are many modules like academic, admission, settings, accounts, users, LMS settings
+
+so mainly I have worked on academic and users, accounts,  LMS setting module
+
+I would like to explain about like
+
+Firstly we create the setting for panel like what's the  
+1. admission type like - fresher, lateral , or credit transfer  on behalf of the we decide the course duration.
+2. mode - like the course type will be monthly , yearly or semester wise.
+3. we add the scheme - scheme is suppose you are pass out in 2023 and you are fail in a subject so you have to find out the course fee and subjects syllabus according to the pass out year so that it help to find out the details.
+4. admission session-  in this module, generally we create the admission session where we  also declare the which admission session is current session.
+5. exam session- we create the exam session on behalf of admission session, admission type and course duration.
+6. fee structure - we define the late fee, course fee, examination fee, registration fee on behalf of center ids.( when that center will login the panel a  notification will pop-up with the fee and also when the students punch  under the center that time ledger will generated according to these fee type.).
+
+Academic-
+In this module we add the department, program, specialization
+ we add the department like it, medical , skill, in that type of department we create the program , specialization - 
+suppose aktu university have  program like b-tech, b-pharama and all and there programe we add the specialization like computer science & enginnering, civil enginnering  and alls
+we add the specialization according to the admission type like lateral , freser, credit transerfer and also we add the like which type of  graducation is complasry.
+
+now come to the Users module-
+users module is the   impotant module.
+- In this module we add the university head, operations, accountant, counsellor, sub-counsellor, center, sub-center
+each users has them own role and responsibility.
+
+- University head as define by the name of like he is universy head( we allot the university access like which university is accessible for that particular user)
+
+- under the university user we create the  we create the the operation and allot them to university head 
+the main role of operation is to verify the data.
+
+- now come to the counselor part - i would like to let you know like in my current company has another department of sales, so they work as cpounsellor  and them team
+the main role of counselors are to find the center and the so that center can punch the admissions.
+
+-Center is a main part of the users 
+basically we allot the university, course and subcourse fee for a particular center so that the can punch the admission.
+center have them own login panel where center can punch the admission and procced the students.
+when a student punch that time them student ledger have been generated according to them fee.
+after punching center pay the fee of students in two modes- first one is offline mode and the second one is online mode.
+before that i would like to tell a important part of the payment-
+if center is proccedd=ing the students then firstily cemter has to be add the amount in them wallet
+so basically  center add the amount in two mode like in online and in offiline .
+
+Now comes to the account section-
+in account section have - wallet payment, offilen payment student ledger, center ledger.
+so in the center ledger- center select the student and procced them for paying them fees through offline and wallet mode.
+so basically here i managed the three type of status-  not processed, pending and proceed.
+after that student document review and enrolled for the university so that also  students can access the learning management system.
+
+now comes to the LMS SETTINGS-
+in this module basically we upload the subject , notes, assignments, videos, e-books,notifications and results and all
+and generate the result of students.
+
+Studnets lms-
+Students have them own learning management system where we provide the admit card , id card, dateseetss,e-boks, viedos, notes, and they can also  submit them assignments get the real time notification in notification section, also we provide the exam form that they can procced for the exams.
+
+
+if I will talk about my role and respnsibiley so that i have generated this sytem so that 
+
+in that panel i  faced the problem to  manage the users on login of university head, counselloer, sub-counselloers allotted users.
+and i resolved it by managing allotment users and giving structred table for the allotment.
+
+2. when the students legers have been generated and that how will i mange them fee like late fee , course fee and all
+3. i also faced the issue to get manage the wallet management  to pay the fee of students.
+4.  i also faced the issue to generate the results of students because each time requrments are updateing so that time i porepare a case like what are the posibilty to upload and generate the  result like fail and pass.
+
+
+
+
+ 
+  
+
+
+
+
+
+
+
+
+

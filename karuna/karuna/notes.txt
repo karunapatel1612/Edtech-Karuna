@@ -1,0 +1,65 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SELECT Students.Unique_ID, Students.First_Name, Students.Enrollment_No, Students.University_ID FROM `Examination_Confirmation` LEFT JOIN Students ON Examination_Confirmation.Student_Id=Students.ID
+
+
+
+SELECT * FROM `Students` WHERE `University_ID` = 47 AND Step=4 AND Process_By_Center IS NOT NULL;
+
+
+SELECT *  FROM `Students` WHERE `University_ID` = 47 AND Step=4 AND Process_By_Center IS NOT NULL  AND Admission_Type_ID in(67,90 ,76) AND Duration in (6, 4,2);
+
+
+
+
+SELECT * FROM `Students` WHERE `University_ID` = 47 AND Duration = 6 AND Admission_Session_ID = 76; 
+
+3
+
+SELECT *  FROM `Students` WHERE `University_ID` = 47 AND  Duration = 4 AND Admission_Session_ID = 90;
+
+0
+
+SELECT * FROM `Students` WHERE `University_ID` = 47 AND Duration = 2 AND Admission_Session_ID = 67;
+231

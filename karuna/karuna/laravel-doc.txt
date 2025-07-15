@@ -1,0 +1,6 @@
+1. Use of @can ?
+2. How to create controller ?
+=> php artisan make:Controller [Name]Controller
+
+3. How to create model?
+=> php artisan make:model  [Name]Model

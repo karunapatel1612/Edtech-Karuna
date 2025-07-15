@@ -1,0 +1,57 @@
+	
+
+
+
+
+
+  <?php
+
+                 $display = in_array($_SESSION['Role'], ['Center', 'Sub-Center']) ? 'style="display:none !important"' : "";
+                ?>
+
+              <div class="col-md-2 m-b-10" <?= $display ?> >
+
+
+
+SELECT Paper_Type,s.Name as subject_name,m.exam_month,m.exam_year, s.Code,s.Max_Marks, s.Min_Marks, m.obt_marks,m.remarks,m.obt_marks_ext,m.obt_marks_int From marksheets AS m LEFT JOIN Syllabi AS s ON m.subject_id = s.ID WHERE m.enrollment_no = 'GU24V1882'  AND s.Semester=1 AND m.obt_marks_int IS NOT NULL AND m.obt_marks_ext IS NOT NULL ORDER BY s.Code
+
+
+
+ALTER TABLE Notifications_Generated ADD `scheme_id` INT(50) NULL AFTER `course_id`;
+
+
+SELECT ID, Role, Name from Users WHERE   Users.ID IN (1433,1434)
+AND University_ID IN (".$_SESSION['all_university_ids'].")"
+
+DELETE FROM Users WHERE ID IN(1401,1402,1403,1412,1413,1414,1415,1416,1417,1418,1419,1420,1421,1422,1423)
+
+
+ALTER TABLE `Date_Sheets` CHANGE `Start_Time` `Start_Time` VARCHAR(500) NULL, CHANGE `End_Time` `End_Time` VARCHAR(500) NULL;
+
+
+// $("#userForm").on("submit",async function(e){
+  // if($("#userForm").valid()){
+  //   e.preventDefault(); 
+  //   var formData = new FormData(this);
+  //   let response = await fetch(this.action, {
+  //     method:'POST',
+  //     body:formData
+  //   });
+  //   if(!response.ok ) {
+  //     console.log("Http status : "+ response.status);
+  //   }
+  //   let result = await response.json();
+  //   console.log(result);
+  //   if (response.ok && result.status == 200) {
+  //       // $('#showForm').modal('hide'); 
+  //       // $("#showForm")[0].reset();
+  //       toastr.success(result.message);
+  //     } else {
+  //       toastr.error(result.message || "An error occurred.");
+  //     }
+  // }
+
+  //  })
+
+
+

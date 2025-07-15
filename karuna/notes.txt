@@ -1,0 +1,160 @@
+ALTER TABLE `courses` CHANGE `Department_ID` `Department_ID` VARCHAR(255) NULL DEFAULT NULL;
+
+
+
+
+
+
+
+C:\Users\Lenovo\Videos\glocal
+
+
+
+ALTER TABLE `student_ledgers` ADD `Receipt_File` VARCHAR(400) NULL AFTER `utr_no`, ADD `Account_Holder_ID` INT(255) NULL AFTER `Receipt_File`;
+
+
+
+
+1. export of center-master
+2.  allot university of   center  when university head login
+3.  show only the  university head on login of university head in sharma institute
+4. remove the validation from alternate contact no. and email
+
+
+
+SELECT Alloted_Center_To_Counsellor.Code, Name FROM Users left join Alloted_Center_To_Counsellor ON Alloted_Center_To_Counsellor.Code= Users.id WHERE Users.role = 'Sub-Center' GROUP BY Users.ID;
+
+
+
+GSKILL33351
+	
+pg diploma and toc center allocation are done and result upload according to the alloted subjects is in process
+
+1091 -Advanced skill diploma in counselling psychology & hypnotherapy
+
+
+
+UPDATE `sub_center_sub_courses` SET `Sub_Course_ID` = '1093' WHERE `Sub_Course_ID` = 1051;
+
+UPDATE `students` SET `Sub_Course_ID` = '1093' WHERE `Sub_Course_ID` = 1051;
+
+{
+UPDATE `center_sub_courses` SET `Sub_Course_ID` = '1093' WHERE `Sub_Course_ID` = 1051;
+}
+	
+
+{
+UPDATE `sub_center_sub_courses` SET `Sub_Course_ID` = '1093' WHERE `Sub_Course_ID` = 1313;
+}
+
+
+
+{
+UPDATE `center_sub_courses` SET `Sub_Course_ID` = '1093' WHERE `Sub_Course_ID` = 1313;
+
+SELECT GROUP_CONCAT(ID) FROM `center_sub_courses` WHERE `Sub_Course_ID` = 1313 ORDER BY `center_sub_courses`.`User_ID` ASC;
+19002,19003,19004,19005,19414,19415,19416,19417,22181,22182,22183,22184,26063,26064,26070,36531,38975,38976,38977,38978
+}
+
+
+
+
+
+
+
+
+
+0 Thursday, January 16, 2025 1.30PM 2.00PM-5.00PM KHU702 Project Management & Entrepreneurship 
+Friday, January 10, 2025 1.30PM 2.00PM-5.00PM KOE074 Renewable Energy Resources
+Saturday, January 18, 2025 1.30PM 2.00PM-5.00PM KCS074 Cryptography and Network Security
+Saturday, January 25, 2025 1.30PM 2.00PM-5.00PM KCS713 Cloud Computing
+
+10, 2025
+16, 2025
+18, 2025
+25, 2025 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+UPDATE `Users` SET Vertical=2 WHERE `Code` LIKE '%0004%';
+
+SELECT ID, Code, Vertical FROM `Users` WHERE `Code` LIKE '%0014%';
+
+$is_not_deleted = " AND Deleted_At IS NULL ";
+
+ALTER TABLE `center_sub_courses` ADD `Sub_Courses_Status` INT(255) NULL AFTER `University_ID`;
+
+ALTER TABLE `sub_center_sub_courses` ADD `Sub_Courses_Status` VARCHAR(255) NULL DEFAULT '0' AFTER `Sub_Course_ID`;
+
+
+
+1798
+
+
+
+
+GSKILL02126
+
+
+
+
+
+added_for is for center
+added_by is for who add it
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SELECT Students.Unique_ID, Students.First_Name, Students.Enrollment_No, Students.University_ID FROM `Examination_Confirmation` LEFT JOIN Students ON Examination_Confirmation.Student_Id=Students.ID
+
+
+
+SELECT * FROM `Students` WHERE `University_ID` = 47 AND Step=4 AND Process_By_Center IS NOT NULL;
+
+
+SELECT *  FROM `Students` WHERE `University_ID` = 47 AND Step=4 AND Process_By_Center IS NOT NULL  AND Admission_Type_ID in(67,90 ,76) AND Duration in (6, 4,2);
+
+
+
+
+SELECT * FROM `Students` WHERE `University_ID` = 47 AND Duration = 6 AND Admission_Session_ID = 76; 
+
+3
+
+SELECT *  FROM `Students` WHERE `University_ID` = 47 AND  Duration = 4 AND Admission_Session_ID = 90;
+
+0
+
+SELECT * FROM `Students` WHERE `University_ID` = 47 AND Duration = 2 AND Admission_Session_ID = 67;
+231

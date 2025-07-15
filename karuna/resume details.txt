@@ -1,0 +1,88 @@
+
+Edtech Innovate Pvt. Ltd.
+Glocal:
+1. glocal is skill and vocational type of university.
+2. in vocational type university courses are created according to the semester like medical lab technology, hotel administration are the specializations and in skill type of university courses and specialization according to the duration like 11 months Advanced Diploma, 6 month certified and all. 
+1. In this project created multiple type of role or users and also created the login panel for each users on the basis of role.
+2. assign the department wise fee to each courses and sub-courses
+3. add the students in the allotted courses and generated the fee ledger for the all semester and if the late fee or the other fee type is activated for the courses and in admission session.
+4. created a wallet system to add the fee in the center and sub-center where center and sub-center is the users type or role wallet in online and offline mode.   
+5. for the online mode option I have integrated the payment gateway of easebuzz.
+6. Here the students course fee paid via the center and subcentre though the offline and wallet  mode.
+7.  after that process enrolled the students.
+8.  created the subjects upload , e-book, video, notes , assignments, datesheet upload, admit card and also create a result module the upload the results and show the results of each students.
+8 . created the lms of each students
+
+
+SKILL APP
+
+Skill app is app where the students will enrolled and purchase the courses. 
+in this project i have created api and also integreated payment gateway using by Laravel.
+
+Note: Also developed meny more erp projects  like Jamia, Gurukashi etc erp's
+
+Blue Digital Media Pvt. Ltd.
+- Mobiad Corporation(https://mobiaid.in/)
+It is a e-commerce website where i worked in bakend and frontend both.
+manage the stock, Product and order the order status, generated the order invoices also created a cms for it  in core php.
+
+IITD Abudhabi 
+- it is a educational website in which i have created cms and make dynamic website and also create a lead management system.
+
+Vishwroop
+it is exam panel of students where i worked in backend and created a form for question type and objective type. also generate the result and certificate.
+
+pinkqr -
+it is a e-commers project where i worked in bakend like created a category , product,  discount and brand , banner, and meny more section to manage the data usnng by mvc codingnitor framework. 
+
+
+
+
+
+
+
+
+
+
+
+Project: Glocal University ERP System
+Description: Developed a comprehensive ERP solution for Glocal University, a hybrid institution offering both vocational and skill-based education programs. The system was designed to streamline academic and administrative processes for various user roles and institutions such as centers and sub-centers.
+
+Key Responsibilities & Achievements:
+
+User Role Management:
+
+Designed and implemented multi-role login systems for administrators,University Head, Accountant, Operations, Counsellors, Sub-counsellors, centers, sub-centers, and students,.
+
+Role-based access and functionality tailored to operational needs of each user type.
+
+Course & Specialization Handling:
+
+Enabled dynamic creation of courses based on semester (vocational programs like Medical Lab Technology, Hotel Administration) and duration-based formats (skill programs like 11-month Advanced Diploma, 6-month certifications).
+
+Managed department-wise course and sub-course fee structures.
+
+Student Admission & Fee Ledger:
+
+Developed student enrollment workflows integrated with real-time course assignment and fee ledger generation across semesters.
+
+Incorporated additional fee types like late fees and session-based fees.
+
+Wallet & Payment Integration:
+
+Built a wallet system for fee payments by centers and sub-centers, supporting both online (Easebuzz Payment Gateway) and offline modes.
+
+Enabled centralized and decentralized fee collection mechanisms.
+
+Academic Resource Management:
+
+Created modules for uploading and managing subjects, e-books, videos, notes, assignments, date sheets, admit cards, and exam results.
+
+Designed and implemented a Learning Management System (LMS) for student-centric academic delivery.
+
+Result & Reporting Module:
+
+Developed functionality to upload and display individual student results and generated them marksheets.
+
+Technologies Used:
+Core PHP, MySQL, HTML, CSS, JavaScript, jQuery, Ajax, Bootstrap, Easebuzz API Integration

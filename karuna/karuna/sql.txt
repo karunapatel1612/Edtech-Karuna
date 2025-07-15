@@ -1,0 +1,195 @@
+SELECT *  FROM `students` WHERE Admission_Type_ID=64 AND Admission_Session_ID=72 AND Added_By = 1864  AND Sub_Course_ID=1507 ORDER BY `ID` DESC;
+
+SELECT *  FROM `students` WHERE Admission_Type_ID=64 AND Admission_Session_ID=72 AND Added_By IN (1864,1869,1870,1905,1913,1950,2004,2005,2006) ORDER BY `ID` DESC;
+
+UPDATE Students SET Sub_Course_ID=1507, Course_Category='certified',Duration='11/certified' WHERE Admission_Type_ID=64 AND Admission_Session_ID=72 AND Added_By IN (1864,1869,1870,1905,1913,1950,2004,2005,2006) ORDER BY `ID` DESC;
+
+UPDATE Students SET Sub_Course_ID=1507, Course_Category='certified',Duration='11/certified' WHERE Admission_Type_ID=64 AND Admission_Session_ID=73 AND Added_By IN (1864,1869,1870,1905,1913,1950,2004,2005,2006) ORDER BY `ID` DESC;
+
+UPDATE Students SET Sub_Course_ID=1507, Course_Category='certified',Duration='11/certified' WHERE Admission_Type_ID=64 AND Admission_Session_ID=86 AND Added_By IN (1864,1869,1870,1905,1913,1950,2004,2005,2006) ORDER BY `ID` DESC;
+
+UPDATE Students SET Sub_Course_ID=1507, Course_Category='certified',Duration='11/certified' WHERE Admission_Type_ID=64 AND Admission_Session_ID=88 AND Added_By IN (1864,1869,1870,1905,1913,1950,2004,2005,2006) ORDER BY `ID` DESC;
+
+
+UPDATE Student_Ledgers SET Duration='11/certified' WHERE  Student_ID IN(962, 1000, 1001, 1002, 1003, 1004, 1008, 1010, 1013, 1026, 1027, 1028, 1029, 1030, 1032, 1033, 1034, 1127, 1128, 1130, 1131, 1133, 1135, 1139, 1141, 1142, 1143, 1144, 1145, 1146, 1148, 1150, 1151, 1152, 1153, 1154, 1155, 1157, 1160, 1162, 1163, 1164, 1166, 1167, 1168, 1169, 1170, 1171, 1172, 1173, 1174, 1175, 1176, 1177, 1178, 1179, 1180, 1182, 1183, 1185, 1186, 1187, 1188, 1189, 1190, 1191, 1192, 1193, 1194, 1195, 1196, 1197, 1198, 1199, 1200, 1201, 1202, 1203, 1204, 1205, 1206, 1207, 1209, 1212, 1213, 1215, 1218, 1219, 1220, 1221, 1222, 1224, 1225, 1226, 1233, 1234, 1235, 1250, 1252, 1255, 1257, 1258, 1267, 1271, 1274, 1276, 1282, 1283, 1284, 1290, 1291, 1292, 1297, 1303, 1304, 1306, 1307, 1310, 1311, 1313, 1314, 1315, 1320, 1322, 1323, 1324, 1325, 1326, 1327, 1330, 1332, 1333, 1334, 1336, 1337, 1338, 1339, 1340, 1342, 1345, 1348, 1349, 1352, 1354, 1355, 1356, 1357, 1372, 1373, 1374, 1375, 1376, 1379, 1382, 1386, 1390, 1391, 1392, 1394, 1395, 1396, 1397, 1398, 1399, 1400, 1403, 1405, 1407, 1409, 1410, 1411, 1412, 1414, 1516, 1517, 1518, 1519, 1520, 1522, 1523, 1524, 1526, 1527, 1528, 1529, 1530, 1531, 1532, 1534, 1535, 1553, 1556, 1557, 1558, 1559, 1560, 1561, 1565, 1566, 1567, 1568, 1569, 1571, 1573, 1574, 1575, 1577, 1579, 1580, 1581, 1582, 1585, 1587, 1590, 1591, 1592, 1593, 1594, 1595, 1596, 1598, 1599, 1600, 1601, 1602, 1603, 1604, 1606, 1607, 1608, 1609, 1610, 1611, 1612, 1614, 1619, 1620, 1621, 1622, 1623, 1624, 1625, 1626, 1628, 1629, 1630, 1631, 1632, 1633, 1634, 1635, 1639, 1640, 1641, 1642, 1643, 1644, 1645, 1646, 1647, 1648, 1650, 1651, 1652, 1653, 1654, 1655, 1657, 1659, 1660, 1661, 1662, 1663, 1665, 1666, 1667, 1668, 1669, 1672, 1682);
+
+UPDATE Student_Ledgers SET Duration='11/certified' WHERE  Student_ID IN(1217, 1550, 1555, 1572, 1583, 1588, 1605, 1615, 1616, 1618, 1670, 1671, 1673, 1675, 1676, 1677, 1680, 1681, 1704, 1705, 1706, 1707, 1709, 1710, 1712, 1713, 1714, 1715, 1716, 1717, 1718, 1775, 1956, 1960, 1961, 1963, 1965, 1966, 1968, 1969, 1972, 1974, 1977, 1983, 1988, 1989, 1990, 2000, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2014, 2016, 2017, 2018, 2019, 2020, 2022, 2023, 2024, 2025, 2026, 2028, 2034, 2035, 2043, 2046, 2047, 2048, 2049, 2054, 2055, 2057, 2214);
+
+UPDATE Student_Ledgers SET Duration='11/certified' WHERE  Student_ID IN(2311);
+
+
+UPDATE Student_Ledgers SET Duration='11/certified' WHERE Student_ID IN(1507, 1509, 1510, 1511, 1513, 1521, 1542, 1545, 1546, 1547, 1554, 1597, 1728, 1731, 2206, 2217, 2222, 2259, 2315, 2317, 2343);
+
+
+
+
+UPDATE Wallet_Invoices SET Duration='11/certified' WHERE  Student_ID IN(962, 1000, 1001, 1002, 1003, 1004, 1008, 1010, 1013, 1026, 1027, 1028, 1029, 1030, 1032, 1033, 1034, 1127, 1128, 1130, 1131, 1133, 1135, 1139, 1141, 1142, 1143, 1144, 1145, 1146, 1148, 1150, 1151, 1152, 1153, 1154, 1155, 1157, 1160, 1162, 1163, 1164, 1166, 1167, 1168, 1169, 1170, 1171, 1172, 1173, 1174, 1175, 1176, 1177, 1178, 1179, 1180, 1182, 1183, 1185, 1186, 1187, 1188, 1189, 1190, 1191, 1192, 1193, 1194, 1195, 1196, 1197, 1198, 1199, 1200, 1201, 1202, 1203, 1204, 1205, 1206, 1207, 1209, 1212, 1213, 1215, 1218, 1219, 1220, 1221, 1222, 1224, 1225, 1226, 1233, 1234, 1235, 1250, 1252, 1255, 1257, 1258, 1267, 1271, 1274, 1276, 1282, 1283, 1284, 1290, 1291, 1292, 1297, 1303, 1304, 1306, 1307, 1310, 1311, 1313, 1314, 1315, 1320, 1322, 1323, 1324, 1325, 1326, 1327, 1330, 1332, 1333, 1334, 1336, 1337, 1338, 1339, 1340, 1342, 1345, 1348, 1349, 1352, 1354, 1355, 1356, 1357, 1372, 1373, 1374, 1375, 1376, 1379, 1382, 1386, 1390, 1391, 1392, 1394, 1395, 1396, 1397, 1398, 1399, 1400, 1403, 1405, 1407, 1409, 1410, 1411, 1412, 1414, 1516, 1517, 1518, 1519, 1520, 1522, 1523, 1524, 1526, 1527, 1528, 1529, 1530, 1531, 1532, 1534, 1535, 1553, 1556, 1557, 1558, 1559, 1560, 1561, 1565, 1566, 1567, 1568, 1569, 1571, 1573, 1574, 1575, 1577, 1579, 1580, 1581, 1582, 1585, 1587, 1590, 1591, 1592, 1593, 1594, 1595, 1596, 1598, 1599, 1600, 1601, 1602, 1603, 1604, 1606, 1607, 1608, 1609, 1610, 1611, 1612, 1614, 1619, 1620, 1621, 1622, 1623, 1624, 1625, 1626, 1628, 1629, 1630, 1631, 1632, 1633, 1634, 1635, 1639, 1640, 1641, 1642, 1643, 1644, 1645, 1646, 1647, 1648, 1650, 1651, 1652, 1653, 1654, 1655, 1657, 1659, 1660, 1661, 1662, 1663, 1665, 1666, 1667, 1668, 1669, 1672, 1682);
+
+UPDATE Wallet_Invoices SET Duration='11/certified' WHERE Student_ID IN(1217, 1550, 1555, 1572, 1583, 1588, 1605, 1615, 1616, 1618, 1670, 1671, 1673, 1675, 1676, 1677, 1680, 1681, 1704, 1705, 1706, 1707, 1709, 1710, 1712, 1713, 1714, 1715, 1716, 1717, 1718, 1775, 1956, 1960, 1961, 1963, 1965, 1966, 1968, 1969, 1972, 1974, 1977, 1983, 1988, 1989, 1990, 2000, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2014, 2016, 2017, 2018, 2019, 2020, 2022, 2023, 2024, 2025, 2026, 2028, 2034, 2035, 2043, 2046, 2047, 2048, 2049, 2054, 2055, 2057, 2214);
+
+UPDATE Wallet_Invoices SET Duration='11/certified' WHERE Student_ID IN(2311);
+
+UPDATE Wallet_Invoices SET Duration='11/certified' WHERE Student_ID IN(1507, 1509, 1510, 1511, 1513, 1521, 1542, 1545, 1546, 1547, 1554, 1597, 1728, 1731, 2206, 2217, 2222, 2259, 2315, 2317, 2343);
+
+
+SELECT * FROM `student_ledgers` WHERE Student_ID IN(962, 1000, 1001, 1002, 1003, 1004, 1008, 1010, 1013, 1026, 1027, 1028, 1029, 1030, 1032, 1033, 1034, 1127, 1128, 1130, 1131, 1133, 1135, 1139, 1141, 1142, 1143, 1144, 1145, 1146, 1148, 1150, 1151, 1152, 1153, 1154, 1155, 1157, 1160, 1162, 1163, 1164, 1166, 1167, 1168, 1169, 1170, 1171, 1172, 1173, 1174, 1175, 1176, 1177, 1178, 1179, 1180, 1182, 1183, 1185, 1186, 1187, 1188, 1189, 1190, 1191, 1192, 1193, 1194, 1195, 1196, 1197, 1198, 1199, 1200, 1201, 1202, 1203, 1204, 1205, 1206, 1207, 1209, 1212, 1213, 1215, 1218, 1219, 1220, 1221, 1222, 1224, 1225, 1226, 1233, 1234, 1235, 1250, 1252, 1255, 1257, 1258, 1267, 1271, 1274, 1276, 1282, 1283, 1284, 1290, 1291, 1292, 1297, 1303, 1304, 1306, 1307, 1310, 1311, 1313, 1314, 1315, 1320, 1322, 1323, 1324, 1325, 1326, 1327, 1330, 1332, 1333, 1334, 1336, 1337, 1338, 1339, 1340, 1342, 1345, 1348, 1349, 1352, 1354, 1355, 1356, 1357, 1372, 1373, 1374, 1375, 1376, 1379, 1382, 1386, 1390, 1391, 1392, 1394, 1395, 1396, 1397, 1398, 1399, 1400, 1403, 1405, 1407, 1409, 1410, 1411, 1412, 1414, 1516, 1517, 1518, 1519, 1520, 1522, 1523, 1524, 1526, 1527, 1528, 1529, 1530, 1531, 1532, 1534, 1535, 1553, 1556, 1557, 1558, 1559, 1560, 1561, 1565, 1566, 1567, 1568, 1569, 1571, 1573, 1574, 1575, 1577, 1579, 1580, 1581, 1582, 1585, 1587, 1590, 1591, 1592, 1593, 1594, 1595, 1596, 1598, 1599, 1600, 1601, 1602, 1603, 1604, 1606, 1607, 1608, 1609, 1610, 1611, 1612, 1614, 1619, 1620, 1621, 1622, 1623, 1624, 1625, 1626, 1628, 1629, 1630, 1631, 1632, 1633, 1634, 1635, 1639, 1640, 1641, 1642, 1643, 1644, 1645, 1646, 1647, 1648, 1650, 1651, 1652, 1653, 1654, 1655, 1657, 1659, 1660, 1661, 1662, 1663, 1665, 1666, 1667, 1668, 1669, 1672, 1682);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MONITASORTY TEACHER TRAINING  TO MONITASORTY TEACHER TRAINING COURSE
+
+UPDATE Students SET Sub_Course_ID = 1507 WHERE Sub_Course_ID = 1161 AND Unique_ID IN('GSKILL81310','GSKILL37708','GSKILL81746','GSKILL06914','GSKILL31787','GSKILL79406');
+
+
+
+SELECT * FROM `students` WHERE Unique_ID IN('GSKILL81310','GSKILL37708','GSKILL81746','GSKILL06914','GSKILL31787','GSKILL79406');
+
+
+pre planning teacher traing to pre planning teacher traing course 
+UPDATE syllabi SET Sub_Course_ID = 1510 WHERE `Sub_Course_ID` = 1205;
+	
+UPDATE Students SET Sub_Course_ID = 1510 WHERE Sub_Course_ID = 1205 AND Unique_ID IN('GSKILL21142','GSKILL82391','GSKILL69422','GSKILL78404','GSKILL78404','GSKILL18022','GSKILL62931','GSKILL37571','GSKILL71684','GSKILL94625','GSKILL64804','GSKILL68756','GSKILL61631','GSKILL88315','GSKILL38220','GSKILL74022', 'GSKILL35916','GSKILL05498','GSKILL68153','GSKILL17433','GSKILL94256','GSKILL38100');
+
+SELECT * FROM `students` WHERE Unique_ID IN('GSKILL21142','GSKILL82391','GSKILL69422','GSKILL78404','GSKILL78404','GSKILL18022','GSKILL62931','GSKILL37571','GSKILL71684','GSKILL94625','GSKILL64804','GSKILL68756','GSKILL61631','GSKILL88315','GSKILL38220','GSKILL74022',
+'GSKILL35916','GSKILL05498','GSKILL68153','GSKILL17433','GSKILL94256','GSKILL38100'); 
+
+
+GSKILL21142,GSKILL82391,GSKILL69422,GSKILL78404,GSKILL78404,GSKILL18022,GSKILL62931,GSKILL37571,GSKILL71684,GSKILL94625,GSKILL64804,GSKILL68756,GSKILL61631,GSKILL88315,GSKILL38220,GSKILL74022,
+GSKILL35916,GSKILL05498,GSKILL68153,GSKILL17433,GSKILL94256,GSKILL38100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SELECT Students.ID as student_id, 
+        CONCAT_WS(' ', Students.First_Name, Students.Middle_Name, Students.Last_Name) AS student_name,
+        Students.Enrollment_No,
+        Subjects.Name as subject_name,
+       CASE WHEN Users.Vertical = 1 THEN 'IITS'WHEN Users.Vertical = 2 THEN 'Edtech'WHEN Users.Vertical = 3 THEN 'InterNational' ELSE 'Other' END AS verticaltype,
+       CASE WHEN Universities.ID = 48 THEN 'Jamia Urdu Aligarh' ELSE 'Unknown University' END AS universityname,
+       CASE WHEN Student_Submitted_Assignment.id IS NULL THEN 'NOT SUBMITTED'
+    WHEN Student_Submitted_Assignment.id IS NOT NULL AND Student_Assignment_Result.status = 'Rejected' AND Student_Submitted_Assignment.reuploaded = 1 THEN 'RESUBMITTED'
+    WHEN Student_Submitted_Assignment.id IS NOT NULL AND Student_Assignment_Result.status = 'Rejected' THEN 'NOT RESUBMITTED'
+    WHEN Student_Submitted_Assignment.id IS NOT NULL THEN 'SUBMITTED'
+    ELSE 'UNKNOWN STATUS'
+    END AS assignment_submission_status,
+        CASE WHEN Student_Assignment_Result.status IS NULL THEN 'NOT EVALUATED' ELSE Student_Assignment_Result.status END AS eva_status,
+        CASE WHEN Student_Assignment.id IS NULL THEN 'NOT CREATED' ELSE 'CREATED' END AS assignment_status,
+        COALESCE(Student_Submitted_Assignment.uploaded_type, 'NULL') AS uploaded_type,
+        Student_Submitted_Assignment.created_date,
+        Student_Submitted_Assignment.as_solutions_file AS pdffile,
+        Courses.Name AS course_name,
+        Courses.Short_Name as Short_Name,
+        Student_Assignment_Result.remark AS reason,
+        Student_Assignment_Result.obtained_mark AS obt_mark,
+        Student_Submitted_Assignment.id,
+        Subjects.ID AS subject_id,
+        Student_Assignment.id AS assignment_id,
+        Users.Name AS center_name,
+        Users.Code AS center_code,
+        Students.Unique_ID AS stu_unique_id,
+        Students.DOB as dateofbirth,
+        Student_Assignment.assignment_name as taskname
+    FROM Students
+    LEFT JOIN Student_Subjects ON Students.ID = Student_Subjects.Student_Id
+    LEFT JOIN Subjects ON Student_Subjects.Subject_Id = Subjects.ID
+    LEFT JOIN Student_Submitted_Assignment ON Students.ID = Student_Submitted_Assignment.student_id AND Subjects.ID = Student_Submitted_Assignment.subject_id 
+    LEFT JOIN Courses ON Courses.ID = Students.Course_ID
+    LEFT JOIN Student_Assignment ON Subjects.ID = Student_Assignment.subject_id
+    LEFT JOIN Student_Assignment_Result ON Student_Submitted_Assignment.id = Student_Assignment_Result.assignment_id
+    LEFT JOIN Universities ON Students.University_ID = Universities.ID
+    LEFT JOIN Users ON Students.Added_For = Users.ID 
+    WHERE Students.status != 2 AND Student_Assignment.id IS NOT NULL $pro_filter $searchQuery 
+    GROUP BY Students.ID, Subjects.ID
+    ORDER BY $orderBy 
+    LIMIT ?, ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE `marksheets` CHANGE `updated_at` `updated_at` TIMESTAMP on update CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP;
+
+
+
+1. student name - camale case in marksheet and certificate of glocal.
+2. program name, spe
+3. advanced ... add in certificate and result
+
+
+
+
+
+INSERT INTO `users` (`ID`, `Code`, `Name`, `Short_Name`, `Contact_Name`, `Email`, `Alternate_Email`, `Mobile`, `Alternate_Mobile`, `Designation`, `Role`, `Password`, `Address`, `Pincode`, `State`, `City`, `District`, `Photo`, `Is_Unique`, `IsFirstLogin`, `CanCreateSubCenter`, `B2B_Partner`, `Status`, `Created_By`, `Created_At`, `Updated_On`, `Vertical_type`) VALUES ('1', 'SUBHBHARATI', 'Admin', 'Admin', '7864736732', 'admin@hims.com', 'admin@hims.com', '7864736732', '7864736732', 'Administartor', 'Administrator', 0x942f4ae4ad8d147a79de09ced090b3be, NULL, NULL, NULL, NULL, NULL, '/assets/img/default-user.png', '0', '1', '1', '0', '1', '1', current_timestamp(), current_timestamp(), NULL);
+
+
+
+
+
+ Sub_Courses.Mode_ID AS mode_val 
+
+
+SELECT Sub_Courses.ID, Sub_Courses.Course_ID,Courses.Department_ID, Sub_Courses.Mode_ID, Sub_Courses.Min_Duration, CONCAT(Courses.Short_Name, ' (', Sub_Courses.Name, ')') AS Sub_Course, Sub_Courses.University_ID AS uni_name ,csc.Fee
+FROM center_sub_courses AS csc 
+LEFT JOIN sub_courses as  Sub_Courses ON csc.Sub_Course_ID = Sub_Courses.ID
+LEFT JOIN courses as Courses ON csc.Course_ID = Courses.ID;
+
+
+
+SELECT s.ID, s.Unique_ID, s.Enrollment_No,TRIM(CONCAT(s.First_Name, IF(s.Middle_Name!='', CONCAT(' ', s.Middle_Name), ''), ' ', s.Last_Name)) as Name FROM `Examination_Confirmation` AS ec LEFT JOIN Students AS s ON ec.Student_Id = s.ID;

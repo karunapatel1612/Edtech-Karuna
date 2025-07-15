@@ -1,0 +1,96 @@
+B.Voc in E Commerce & Digital Marketing Skill 
+B.Voc in Web technologies
+B.Voc in Accounting and Business
+B.Voc in Beauty and Wellness 
+
+
+B.Voc in Child Care & Education course in not added in the panel
+B.Voc in Power Energy of Technology Management  course in not added in the panel
+
+SELECT Users.ID, Name, Role, Created_By, University_User.University_ID from Users
+LEFT JOIN University_User on User_ID = Users.id
+WHERE Role = 'Counsellor' AND Created_By = 1472 GROUP BY ID
+
+
+
+
+  if($role=='University Head'){
+      
+      // get the Counselloer who have alloted university 
+      $getcounselloer = $conn->query("SELECT User_ID FROM University_User WHERE Reporting = $id AND University_ID = $logged_uni_id group by User_ID");
+      if ($getcounselloer->num_rows > 0) {
+          $getcounselloerID = $getcounselloer->fetch_all(MYSQLI_ASSOC);
+          $getAllotedCounsellorIds = array_column($getcounselloerID, 'User_ID');
+      }
+      
+      // Not alloted to university and created by university head
+      $allotedQuery ='';
+      if(!empty($getAllotedCounsellorIds)){
+          $allotedCounsellorId = implode(',',$getAllotedCounsellorIds);
+        //   $allotedQuery = "  AND Users.Created_By NOT IN($allotedCounsellorId)";  // alloted Counsellor Ids
+      }
+         
+       $getUser = $conn->query("SELECT ID from Users WHERE Role = 'Counsellor' AND Created_By = " . $id .$allotedQuery); 
+       if($getUser->num_rows > 0){
+          $getUserID = $getUser->fetch_all(MYSQLI_ASSOC);
+          $notAllotedCounsellorIds = array_column($getUserID, 'ID');
+          $counsellorIds =  array_merge($notAllotedCounsellorIds,$getAllotedCounsellorIds);
+        }
+       
+
+      if(!empty($counsellorIds)){
+          $counsellorStrId = implode(',',$counsellorIds);
+      }
+      
+       
+  }
+  return $counsellorStrId;
+}
+
+
+
+
+
+
+
+
+
+
+SELECT * FROM Student_Ledgers WHERE  Student_ID IN ('680')
+
+SELECT * FROM Students WHERE Unique_ID IN ('GBVOC31527')
+
+68000001 
+682EDD57C9B15
+5750
+
+23750
+
+Jun-2025545132100752
+
+
+ALTER TABLE `student_ledgers` ADD `fee_head` INT(255) NULL AFTER `Account_Holder_ID`;
+
+ALTER TABLE `student_ledgers` CHANGE `fee_head` `fee_head` VARCHAR(255) NULL DEFAULT NULL;
+
+
+
+
+
+
+
+
+ALTER TABLE `notifications_generated` ADD `scheme_id` TEXT CHARACTER SET utf8 COLLATE utf8_croatian_ci NULL AFTER `Attachment`, ADD `admissionSession_id` TEXT CHARACTER SET utf8 COLLATE utf8_croatian_ci NULL AFTER `scheme_id`, ADD `course_id` TEXT CHARACTER SET utf8 COLLATE utf8_croatian_ci NULL AFTER `admissionSession_id`, ADD `duration` TEXT CHARACTER SET utf8 COLLATE utf8_croatian_ci NULL AFTER `course_id`, ADD `student_id` TEXT CHARACTER SET utf8 COLLATE utf8_croatian_ci NULL AFTER `duration`, ADD `center_id` TEXT CHARACTER SET utf8 COLLATE utf8_croatian_ci NULL AFTER `student_id`, ADD `published_on` TEXT CHARACTER SET utf8 COLLATE utf8_croatian_ci NULL AFTER `center_id`;
+
+ALTER TABLE `notifications_generated` ADD `university_id` INT(11) NULL AFTER `center_id`;
+
+
+
+
+
+
+
+
+
+
+

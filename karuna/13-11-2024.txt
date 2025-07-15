@@ -1,0 +1,219 @@
+ 
+
+ALTER TABLE `students` ADD `exam_exit_status` INT(255) NULL AFTER `Exam`;
+
+
+
+
+GBVOC27265 
+
+
+
+
+        //  for ($i=1; $i <= $max_duration ; $i++) { 
+        //     if(in_array(1, $uploaded_res_duration)){
+        //         if($duration==$i && in_array(1, $uploaded_res_duration)){
+
+        //         }
+        //     } 
+
+        //  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+            if(in_array(1, $uploaded_res_duration)) {
+                if(($duration ==1 && in_array($duration, $uploaded_res_duration)) || ($duration ==2 && in_array($duration, $not_uploaded__res_duration))){
+                    $status =1; //  Exit Status C- 1st semester or 6 months
+                }else if(($duration ==2 && in_array($duration, $uploaded_res_duration)) || ($duration ==2 && in_array($duration, $not_uploaded__res_duration))){
+                }
+            }
+
+
+
+            if(in_array(1, $uploaded_res_duration)) {
+
+           if(($duration == 1 || $duration == 2) &&  in_array(2, $not_uploaded__res_duration)){
+             $status =1; //  Exit Status C- 1st semester or 6 months
+           }else if(($duration ==2 || $duration == 3) && (in_array(1, $uploaded_res_duration) && in_array(2, $uploaded_res_duration)) ){
+            $status =2; //  Exit Status D- 2nd semester or 1 Year 
+           }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+   $enroll = $_POST['enroll'];
+    $current_duration = $_POST['current_duration'];
+    $upload_status =[];
+    // for ($i = 1; $i <= $current_duration; $i++) {
+    //     $check = $conn->query("SELECT * FROM Syllabi as s LEFT JOIN marksheets AS m on s.ID = m.subject_id WHERE enrollment_no = '$enroll' AND Semester = '$i' ");
+    //     if ($check->num_rows > 0) {
+    //         $upload_status['uploaded_duration'][] = $i;
+    //     } else {
+    //         $upload_status['not_uploaded_duration'][] = $i;
+    //     }
+    // }
+    // $not_uploaded_duration = $upload_status['not_uploaded_duration'];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                     
+iits_delhi db
+ALTER TABLE `sub_center_sub_courses` ADD `Admission_Sessions_ID` TEXT NULL AFTER `University_ID`;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GU24V0030
+
+06APR2002
+
+http://glocal.local/student/student-profile?user_id=GU24V0030&password=06APR2002
+
+
+ALTER TABLE `e_books` ADD `sub_course_id` INT(255) NULL AFTER `course_id`;
+
+
+
+
+SH
+Self
+
+
+
+ALTER TABLE `sub_center_sub_courses` ADD `Admission_Sessions_ID` TEXT NULL AFTER `University_ID`;
+
+
+
+
+
+
+
+SELECT c.Short_Name as course_name, sc.Name as sub_course_name, s.Name as subject_name, s.Code,s.Semester as duration, s.Paper_Type,s.Credit, s.Min_Marks, s.Max_Marks FROM `Syllabi` as s  left join Sub_Courses as sc  on s.Sub_Course_ID = sc.ID left join Courses as c ON s.Course_ID=c.ID WHERE s.Sub_Course_ID =1014 and s.University_ID=47 ORDER by s.Semester;SELECT c.Short_Name as course_name, sc.Name as sub_course_name, s.Name as subject_name, s.Code,s.Semester as duration, s.Paper_Type,s.Credit, s.Min_Marks, s.Max_Marks FROM `Syllabi` as s  left join Sub_Courses as sc  on s.Sub_Course_ID = sc.ID left join Courses as c ON s.Course_ID=c.ID WHERE s.Sub_Course_ID =1014 and s.University_ID=47 ORDER by s.Semester;
+
+
+ALTER TABLE `student_ledgers` ADD `Settlement_Amount` VARCHAR(255) NULL AFTER `Fee_Without_Sharing`;
+
+
+
+
+
+
+
+
+
+
+ALTER TABLE `syllabi` ADD `User_ID` INT(255) NULL COMMENT 'Center ID' AFTER `Sub_Course_ID`;
+ALTER TABLE `syllabi` CHANGE `User_ID` `User_ID` TEXT NULL DEFAULT NULL COMMENT 'Center ID';
+
+
+
+
+
+ALTER TABLE `student_assignment` CHANGE `id` `id` BIGINT(11) NOT NULL AUTO_INCREMENT, CHANGE `assignment_name` `assignment_name` VARCHAR(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL, CHANGE `start_date` `start_date` VARCHAR(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL, CHANGE `end_date` `end_date` VARCHAR(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL, CHANGE `created_by` `created_by` VARCHAR(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL, CHANGE `created_date` `created_date` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP, CHANGE `updated_date` `updated_date` TIMESTAMP on update CURRENT_TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP, CHANGE `assignment_file` `assignment_file` VARCHAR(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL, CHANGE `marks` `marks` VARCHAR(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL;
+
+
+ALTER TABLE `student_assignment` ADD `adm_session` INT(255) NULL AFTER `subject_id`;
+
+
+
+
+INSERT INTO `pages` (`ID`, `Name`, `Slug`, `Type`) VALUES (NULL, 'Wallet Payments', 'wallet-payments', 'Accounts');
+
+
+
+ALTER TABLE `student_academics` ADD `marksheet_reference_no` VARCHAR(255) NULL AFTER `Total_Marks`;
+
+	
+
+
+
+
+GBVOC95798- UPDATED SUB_COURSE ID FROM 1195 TO 1015
+
+ALTER TABLE `students` ADD `Deleted_At` VARCHAR(255) NULL AFTER `Updated_At`;
+
+329 
+56
+268
+
+ALTER TABLE `Students` ADD `ABC_ID` VARCHAR(255) NULL AFTER `Exam`, ADD `DEB_ID` VARCHAR(255) NULL AFTER `ABC_ID`;
+
+ 
+  "render": function(data, type, row) {
+              var dob = row.DOB;
+              var contact = row.Contact;
+              var father = row.Father_Name;
+              var vertical_type = row.Vertical==1?'Edtech Innovate': (row.Vertical==2?'IITS':'International');
+
+              return '<span class="cursor-pointer" title="Click to export documents" onclick="exportDocuments(&#39;' + row.ID + '&#39;)"><strong>' + data + '</strong></span>\
+              <p class="mb-0">DOB: ' + dob + ' </p>\
+              <p class="mb-0">Contact: ' + contact + ' </p>\
+              <p class="mb-0">Father\'s Name: ' + father + ' </p>\
+              <p class="mb-0">Vertical: ' + vertical_type + ' </p>\
+              ';
+            }
+
+SELECT Alloted_Center_To_Counsellor.Code, Name, users.Code FROM Alloted_Center_To_Counsellor LEFT JOIN University_User ON Alloted_Center_To_Counsellor.Counsellor_ID = University_User.User_ID AND Alloted_Center_To_Counsellor.University_ID = University_User.University_ID LEFT JOIN users ON Alloted_Center_To_Counsellor.Code = users.ID WHERE Alloted_Center_To_Counsellor.Counsellor_ID = 1725 AND Alloted_Center_To_Counsellor.University_ID IN (48);
+
+
+SELECT * FROM `students` WHERE Added_By IN (1751, 1753, 1754, 1758, 1759, 1837, 1846, 1887, 1916, 1927, 1966, 1967, 1968, 2000, 2009, 2018);
+
+SELECT ID,Code,Role,Vertical,Name FROM `users` WHERE `Code` LIKE '%0010%' AND Vertical=1;
+
+
+UPDATE Users SET Vertical=2 WHERE `Code` LIKE '%0010%' AND Vertical=1;
+UPDATE Users SET Vertical=2 WHERE `Code` LIKE '%0007%' AND Vertical=1;

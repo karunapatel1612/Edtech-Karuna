@@ -1,0 +1,3 @@
+1. show data according to the user type and also manage the all user  for admin 
+2. also add the feature of search by state. city .
+3. add password update password.
